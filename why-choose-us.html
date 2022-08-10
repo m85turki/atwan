@@ -1,0 +1,823 @@
+<!doctype html>
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <title>ATWAN ATTORNEYS</title>
+
+      <!-- Plugin -->
+      <link href="./lib/bootstrap/css/bootstrap.core.dark.css" rel="stylesheet" type="text/css">
+      <link href="./lib/css/header-main_menu.css" rel="stylesheet" type="text/css">
+      <link href="./lib/plugin/hashchange/hashchange.css" rel="stylesheet" type="text/css">
+      <link href="./lib/plugin/splide/css/splide-core.min.css" rel="stylesheet" type="text/css">
+      <link href="./lib/plugin/splide/css/themes/splide-default.min.css" rel="stylesheet" type="text/css">
+      
+      <!-- Fonts -->
+      <link href="./lib/fonts/lato/lato.css" rel="stylesheet" type="text/css">
+      <link href="./lib/fonts/icomoon/icomoon.css" rel="stylesheet" type="text/css">
+      
+      <!-- Atwan style -->
+      <link href="./lib/css/atwan.style.css" rel="stylesheet" type="text/css">
+
+    </head>
+  <body>
+
+  <header id="navHeader" class="header">
+    <div class="header-main">
+
+      <div class="o-container">
+
+        <div class="header-main_inner">
+
+          <div role="banner">
+            <h1 class="c-site-brand">
+              <a href="#" rel="home" class="c-site-brand_link nuxt-link-active">
+                <img src="./lib/img/logo.png" alt="ATWAN ATTORNEYS" loading="lazy" class="c-site-brand_img">
+              </a>
+              </h1>
+          </div>
+
+          <div class="header-main_menu-toggle">
+            <button onclick="myFunction()" class="c-site-nav-toggle">
+              <div id="toggle-nav-label" hidden="hidden">
+                Menu
+              </div>
+              <span class="o-icon -nav-toggle -default c-site-nav-toggle_svg-wrap">
+                <svg viewBox="0 0 33 33" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="1.5" cy="1.5" r="1.5"></circle>
+                  <circle cx="1.5" cy="31.5" r="1.5"></circle>
+                  <circle cx="1.5" cy="16.5" r="1.5"></circle>
+                  <circle cx="31.5" cy="1.5" r="1.5"></circle>
+                  <circle cx="31.5" cy="31.5" r="1.5"></circle>
+                  <circle cx="31.5" cy="16.5" r="1.5"></circle>
+                  <circle cx="16.5" cy="1.5" r="1.5"></circle>
+                  <circle cx="16.5" cy="31.5" r="1.5"></circle>
+                  <circle cx="16.5" cy="16.5" r="1.5"></circle>
+                </svg>
+              </span>
+              <span class="o-icon -nav-toggle -close">
+                <svg viewBox="0 0 33 33" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="1.5" cy="1.5" r="1.5"></circle>
+                  <circle cx="1.5" cy="31.5" r="1.5"></circle>
+                  <circle cx="31.5" cy="1.5" r="1.5"></circle>
+                  <circle cx="31.5" cy="31.5" r="1.5"></circle>
+                  <circle cx="24" cy="9" r="1.5"></circle>
+                  <circle cx="24" cy="24" r="1.5" transform="rotate(90 24 24)"></circle>
+                  <circle cx="9" cy="24" r="1.5"></circle>
+                  <circle cx="9" cy="9" r="1.5" transform="rotate(90 9 9)"></circle>
+                  <circle cx="16.5" cy="16.5" r="1.5"></circle>
+                </svg>
+              </span>
+              <span class="c-site-nav-toggle_label-hover">
+                <span class="c-site-nav-toggle_label" style="margin-left: -1px;">
+                  Menu
+                </span>
+              </span>
+            </button>
+          </div>
+
+          <div class="header-main_desktop is-hidden@to-large">
+            <div class="c-site-search-wrapper">
+              <form role="search" aria-labelledby="search-label" class="c-form">
+                <div id="search-label" hidden="hidden">Site
+                </div>
+                <div class="c-form_item c-site-search">
+                  <input type="search" role="searchbox" name="search" value=""
+                    class="c-form_input -header-search c-site-search_dropdown">
+                  <span class="c-site-search_heading">
+                    <span class="c-site-search_line">
+                    </span>
+                    <span class="c-site-search_heading-bg-wrap">
+                      <span class="c-site-search_heading-bg">
+                        <label class="c-site-search_icon">
+                          <span class="o-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M11 4a7 7 0 104.826 12.07l4.276 3.413.624-.782L16.5 15.33A7 7 0 0011 4zm-6 7a6 6 0 1112 0 6 6 0 01-12 0z">
+                              </path>
+                            </svg>
+                          </span>
+                        </label>
+                      </span>
+                    </span>
+                  </span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-aside">
+      <div class="header-aside_scroller">
+        <div class="header-aside_bg">
+          <canvas width="0" height="0" style="display: block; width: 0px; height: 0px;"></canvas>
+        </div>
+        <div class="o-container">
+          <div class="header-aside_inner">
+
+            <div class="c-site-search-wrapper is-hidden@from-large">
+              <form role="search" aria-labelledby="search-label" class="c-form">
+                <div id="search-label-mobile" hidden="hidden">Site
+                </div>
+                <div class="c-form_item c-site-search">
+                  <input type="search" role="searchbox" name="search" value=""
+                    class="c-form_input c-site-search_dropdown">
+                  <span class="c-site-search_heading">
+                    <span class="c-site-search_line">
+                    </span>
+                    <span class="c-site-search_heading-bg-wrap">
+                      <span class="c-site-search_heading-bg">
+                        <label class="c-site-search_icon">
+                          <span class="o-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M11 4a7 7 0 104.826 12.07l4.276 3.413.624-.782L16.5 15.33A7 7 0 0011 4zm-6 7a6 6 0 1112 0 6 6 0 01-12 0z">
+                              </path>
+                            </svg>
+                          </span>
+                        </label>
+                      </span>
+                    </span>
+                  </span>
+                </div>
+              </form>
+            </div>
+
+            <nav aria-labelledby="primary-nav-label" class="c-primary-nav">
+              <div id="primary-nav-label" hidden="hidden">Primary
+              </div>
+              <ul class="c-primary-nav_list -left" id="navigation-menu">
+                <li class="c-primary-nav_item">
+                  <a href="#/section-1" class="c-primary-nav_link -top-level nuxt-link-active">
+                    <span class="c-primary-nav_link-inner" style="display:none;">
+                      <span class="c-primary-nav_link-label">Home
+                      </span>
+                      <span class="c-primary-nav_link-inner-underline">
+                      </span>
+                    </span>
+                    <span class="c-primary-nav_link-inner">
+                      <span class="c-primary-nav_link-label">Home
+                      </span>
+                      <span class="c-primary-nav_link-dot">
+                      </span>
+                    </span></a>
+                </li>
+                <li class="c-primary-nav_item">
+                  <a href="#/section-2" class="c-primary-nav_link -top-level">
+                    <span class="c-primary-nav_link-inner" style="display:none;">
+                      <span class="c-primary-nav_link-label">Why Choose Us
+                      </span>
+                      <span class="c-primary-nav_link-inner-underline">
+                      </span>
+                    </span>
+                    <span class="c-primary-nav_link-inner">
+                      <span class="c-primary-nav_link-label">Why Choose Us
+                      </span>
+                      <span class="c-primary-nav_link-dot">
+                      </span>
+                    </span></a>
+                </li>
+                <li class="c-primary-nav_item">
+                 <a href="#/section-3" class="c-primary-nav_link -top-level">
+                    <span class="c-primary-nav_link-inner" style="display:none;">
+                      <span class="c-primary-nav_link-label">Meet Our Team
+                      </span>
+                      <span class="c-primary-nav_link-inner-underline">
+                      </span>
+                    </span>
+                    <span class="c-primary-nav_link-inner">
+                      <span class="c-primary-nav_link-label">Meet Our Team
+                      </span>
+                      <span class="c-primary-nav_link-dot">
+                      </span>
+                    </span></a>
+                </li>
+                <li class="c-primary-nav_item">
+                  <a href="#" class="c-primary-nav_link -top-level -submenu-hover js-calc-nav-item-width">
+                    <span class="c-primary-nav_link-inner" style="display:none;">
+                      <span class="c-primary-nav_link-label">Sub-Brands
+                      </span>
+                      <span class="c-primary-nav_link-inner-underline">
+                      </span>
+                    </span>
+                    <span class="c-primary-nav_link-inner">
+                      <span class="c-primary-nav_link-label js-calc-nav-item-label-width">
+                        Sub-Brands
+                      </span>
+                      <span class="c-primary-nav_link-dot">
+                      </span>
+                    </span></a>
+                  <ul class="c-primary-nav_list is-submenu">
+                    <li class="c-primary-nav_item">
+                      <a href="#" class="c-primary-nav_link -submenu-level-1"
+                        style="padding-left: 37.5px; padding-right: 37.5px;">
+                        <span class="c-primary-nav_link-inner">
+                          <span class="c-primary-nav_link-label"> RA&amp;A Advisory &amp; Diplomacy
+                          </span>
+                          <span class="c-primary-nav_link-underline">
+                          </span>
+                        </span></a>
+                      </li>
+                    <li class="c-primary-nav_item">
+                      <a href="#"
+                        class="c-primary-nav_link -submenu-level-1"
+                        style="padding-left: 37.5px; padding-right: 37.5px;">
+                        <span class="c-primary-nav_link-inner">
+                          <span class="c-primary-nav_link-label"> RA&amp;A Lab
+                          </span>
+                          <span class="c-primary-nav_link-underline">
+                          </span>
+                        </span></a>
+                      </li>
+                    <li class="c-primary-nav_item">
+                      <a href="#"
+                        class="c-primary-nav_link -submenu-level-1"
+                        style="padding-left: 37.5px; padding-right: 37.5px;">
+                        <span class="c-primary-nav_link-inner">
+                          <span class="c-primary-nav_link-label"> RA&amp;A Live Experiences
+                          </span>
+                          <span class="c-primary-nav_link-underline">
+                          </span>
+                        </span></a>
+                      </li>
+                    <li class="c-primary-nav_item">
+                      <a href="#"
+                        class="c-primary-nav_link -submenu-level-1"
+                        style="padding-left: 37.5px; padding-right: 37.5px;">
+                        <span class="c-primary-nav_link-inner">
+                          <span class="c-primary-nav_link-label"> RA&amp;A Metaverse
+                          </span>
+                          <span class="c-primary-nav_link-underline">
+                          </span>
+                        </span></a>
+                      </li>
+                    <li class="c-primary-nav_item">
+                      <a href="#"
+                        class="c-primary-nav_link -submenu-level-1"
+                        style="padding-left: 37.5px; padding-right: 37.5px;">
+                        <span class="c-primary-nav_link-inner">
+                          <span class="c-primary-nav_link-label"> RA&amp;A Sport &amp; Entertainment
+                          </span>
+                          <span class="c-primary-nav_link-underline">
+                          </span>
+                        </span></a>
+                      </li>
+                  </ul>
+                </li>
+                <li class="c-primary-nav_item">
+                  <a href="#" class="c-primary-nav_link -top-level -submenu-hover js-calc-nav-item-width">
+                    <span class="c-primary-nav_link-inner" style="display:none;">
+                      <span class="c-primary-nav_link-label">Topics
+                      </span>
+                      <span class="c-primary-nav_link-inner-underline">
+                      </span>
+                    </span>
+                    <span class="c-primary-nav_link-inner" >
+                      <span class="c-primary-nav_link-label js-calc-nav-item-label-width">
+                        Topics
+                      </span>
+                      <span class="c-primary-nav_link-dot">
+                      </span>
+                    </span></a>
+                  <ul class="c-primary-nav_list is-submenu">
+                    <li class="c-primary-nav_item">
+                      <a href="#"
+                        class="c-primary-nav_link -submenu-level-1 nuxt-link-exact-active nuxt-link-active"
+                        style="padding-left: 37.5px; padding-right: 37.5px;" aria-current="page">
+                        <span class="c-primary-nav_link-inner">
+                          <span class="c-primary-nav_link-label"> AI &amp; Technology
+                          </span>
+                          <span class="c-primary-nav_link-underline">
+                          </span>
+                        </span></a>
+                      </li>
+                    <li class="c-primary-nav_item">
+                      <a href="#"
+                        class="c-primary-nav_link -submenu-level-1"
+                        style="padding-left: 37.5px; padding-right: 37.5px;">
+                        <span class="c-primary-nav_link-inner">
+                          <span class="c-primary-nav_link-label"> Culture &amp; Entertainment
+                          </span>
+                          <span class="c-primary-nav_link-underline">
+                          </span>
+                        </span></a>
+                      </li>
+                    <li class="c-primary-nav_item">
+                      <a href="#"
+                        class="c-primary-nav_link -submenu-level-1"
+                        style="padding-left: 37.5px; padding-right: 37.5px;">
+                        <span class="c-primary-nav_link-inner">
+                          <span class="c-primary-nav_link-label"> Education &amp; Youth Engagement
+                          </span>
+                          <span class="c-primary-nav_link-underline">
+                          </span>
+                        </span></a>
+                      </li>
+                    <li class="c-primary-nav_item">
+                      <a href="#"
+                        class="c-primary-nav_link -submenu-level-1"
+                        style="padding-left: 37.5px; padding-right: 37.5px;">
+                        <span class="c-primary-nav_link-inner">
+                          <span class="c-primary-nav_link-label"> Government &amp; International Relations
+                          </span>
+                          <span class="c-primary-nav_link-underline">
+                          </span>
+                        </span></a>
+                      </li>
+                    <li class="c-primary-nav_item">
+                      <a href="#"
+                        class="c-primary-nav_link -submenu-level-1"
+                        style="padding-left: 37.5px; padding-right: 37.5px;">
+                        <span class="c-primary-nav_link-inner">
+                          <span class="c-primary-nav_link-label"> Health
+                          </span>
+                          <span class="c-primary-nav_link-underline">
+                          </span>
+                        </span></a>
+                      </li>
+                    <li class="c-primary-nav_item">
+                      <a href="#"
+                        class="c-primary-nav_link -submenu-level-1"
+                        style="padding-left: 37.5px; padding-right: 37.5px;">
+                        <span class="c-primary-nav_link-inner">
+                          <span class="c-primary-nav_link-label"> Investment, Trade &amp; Financial Markets
+                          </span>
+                          <span class="c-primary-nav_link-underline">
+                          </span>
+                        </span></a>
+                      </li>
+                    <li class="c-primary-nav_item">
+                      <a href="#"
+                        class="c-primary-nav_link -submenu-level-1"
+                        style="padding-left: 37.5px; padding-right: 37.5px;">
+                        <span class="c-primary-nav_link-inner">
+                          <span class="c-primary-nav_link-label"> Sport
+                          </span>
+                          <span class="c-primary-nav_link-underline">
+                          </span>
+                        </span></a>
+                      </li>
+                    <li class="c-primary-nav_item">
+                      <a href="#"
+                        class="c-primary-nav_link -submenu-level-1"
+                        style="padding-left: 37.5px; padding-right: 37.5px;">
+                        <span class="c-primary-nav_link-inner">
+                          <span class="c-primary-nav_link-label"> Sustainability
+                          </span>
+                          <span class="c-primary-nav_link-underline">
+                          </span>
+                        </span></a>
+                      </li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="c-primary-nav_list -right">
+                <li class="c-primary-nav_item">
+                  <a href="#" class="c-primary-nav_link -top-level">
+                    <span class="c-primary-nav_link-inner" style="display:none;">
+                      <span class="c-primary-nav_link-label">Insights
+                      </span>
+                      <span class="c-primary-nav_link-inner-underline">
+                      </span>
+                    </span>
+                    <span class="c-primary-nav_link-inner">
+                      <span class="c-primary-nav_link-label">Insights
+                      </span>
+                      <span class="c-primary-nav_link-dot">
+                      </span>
+                    </span></a>
+                </li>
+                <li class="c-primary-nav_item">
+                  <a href="#" class="c-primary-nav_link -top-level">
+                    <span class="c-primary-nav_link-inner" style="display:none;">
+                      <span class="c-primary-nav_link-label">News &amp; Media
+                      </span>
+                      <span class="c-primary-nav_link-inner-underline">
+                      </span>
+                    </span>
+                    <span class="c-primary-nav_link-inner">
+                      <span class="c-primary-nav_link-label">News &amp; Media
+                      </span>
+                      <span class="c-primary-nav_link-dot">
+                      </span>
+                    </span></a>
+                </li>
+                <li class="c-primary-nav_item">
+                  <a href="#" class="c-primary-nav_link -top-level">
+                    <span class="c-primary-nav_link-inner" style="display:none;">
+                      <span class="c-primary-nav_link-label">Contact
+                      </span>
+                      <span class="c-primary-nav_link-inner-underline">
+                      </span>
+                    </span>
+                    <span class="c-primary-nav_link-inner">
+                      <span class="c-primary-nav_link-label">Contact
+                      </span>
+                      <span class="c-primary-nav_link-dot">
+                      </span>
+                    </span></a>
+                </li>
+                <li class="c-primary-nav_item"><a href="#" target="_blank" rel="noopener noreferrer" class="c-primary-nav_link -top-level">
+                    <span class="c-primary-nav_link-inner" style="display:none;">
+                      <span class="c-primary-nav_link-label">NYF-Institute
+                      </span>
+                      <span class="c-primary-nav_link-inner-underline">
+                      </span>
+                    </span>
+                    <span class="c-primary-nav_link-inner">
+                      <span class="c-primary-nav_link-label">NYF-Institute
+                      </span>
+                      <span class="c-primary-nav_link-dot">
+                      </span>
+                    </span></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <main class="w-100 main-test page">
+    <section id="section-1" class="px-3 mx-0 px-md-5 mx-md-3 pt-5 mt-5">
+      <div class="p-3 d-flex align-items-start flex-column why-choose-us">
+        <div class="title-s pb-4">Why Choose Us</div>
+
+        <div>
+        <div>
+          <div class="row align-items-center w-100 g-4 pb-4">
+            <div class="col-12 col-sm-5 col-md-4 col-lg-auto">
+              <div class="card p-4 me-3">
+                <div class="d-flex flex-wrap align-items-center pb-3">
+                  <div class="number-c">01</div>
+                  <div class="icon-c ms-auto"><span class="icon-banking-law"></span></div>
+                </div>
+                <div class="title-c pb-1">Financial</div>
+                <div class="subtitle-c pb-1">Banking Law</div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-7 col-md-8 col-lg ">
+              <p class="mb-0">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla.
+              </p>            
+            </div>
+          </div>
+          <div class="row align-items-center w-100 g-4 pb-4">
+            <div class="col-12 col-sm-5 col-md-4 col-lg-auto">
+              <div class="card p-4 me-3">
+                <div class="d-flex flex-wrap align-items-center pb-3">
+                  <div class="number-c">02</div>
+                  <div class="icon-c ms-auto"><span class="icon-employment-law"></span></div>
+                </div>
+                <div class="title-c pb-1">BUSINESS</div>
+                <div class="subtitle-c pb-1">Employment Law</div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-7 col-md-8 col-lg ">
+              <p class="mb-0">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla.
+              </p>            
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div style="margin: 0px -5rem 30px -5rem; background: #1C1C1D; ">
+        <div style="padding: 30px 5rem 0px 5rem;">
+          <div class="row align-items-center w-100 g-4 pb-4">
+            <div class="col-12 col-sm-5 col-md-4 col-lg-auto">
+              <div class="card p-4 me-3">
+                <div class="d-flex flex-wrap align-items-center pb-3">
+                  <div class="number-c">03</div>
+                  <div class="icon-c ms-auto"><span class="icon-family-law"></span></div>
+                </div>
+                <div class="title-c pb-1">PERSONAL</div>
+                <div class="subtitle-c pb-1">Family Law</div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-7 col-md-8 col-lg ">
+              <p class="mb-0">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla.
+              </p>            
+            </div>
+          </div>
+          <div class="row align-items-center w-100 g-4 pb-4">
+            <div class="col-12 col-sm-5 col-md-4 col-lg-auto">
+              <div class="card p-4 me-3">
+                <div class="d-flex flex-wrap align-items-center pb-3">
+                  <div class="number-c">04</div>
+                  <div class="icon-c ms-auto"><span class="icon-education-law"></span></div>
+                </div>
+                <div class="title-c pb-1">FINANCIAL</div>
+                <div class="subtitle-c pb-1">Education Law</div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-7 col-md-8 col-lg ">
+              <p class="mb-0">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla.
+              </p>            
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div>
+          <div>
+            <div class="row align-items-center w-100 g-4 pb-4">
+              <div class="col-12 col-sm-5 col-md-4 col-lg-auto">
+                <div class="card p-4 me-3">
+                  <div class="d-flex flex-wrap align-items-center pb-3">
+                    <div class="number-c">05</div>
+                    <div class="icon-c ms-auto"><span class="icon-business-law"></span></div>
+                  </div>
+                  <div class="title-c pb-1">BUSINESS</div>
+                  <div class="subtitle-c pb-1">Business Law</div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-7 col-md-8 col-lg ">
+                <p class="mb-0">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla.
+                </p>            
+              </div>
+            </div>
+            <div class="row align-items-center w-100 g-4 pb-4">
+              <div class="col-12 col-sm-5 col-md-4 col-lg-auto">
+                <div class="card p-4 me-3">
+                  <div class="d-flex flex-wrap align-items-center pb-3">
+                    <div class="number-c">06</div>
+                    <div class="icon-c ms-auto"><span class="icon-real-estate-law"></span></div>
+                  </div>
+                  <div class="title-c pb-1">BUSINESS</div>
+                  <div class="subtitle-c pb-1">Real Estate Law</div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-7 col-md-8 col-lg ">
+                <p class="mb-0">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla.
+                </p>            
+              </div>
+            </div>
+          </div>
+        </div>
+  
+   
+  
+
+      </div>
+    </section>
+
+
+
+
+
+    <footer class="py-5 px-3 mx-0 px-md-5 mx-md-3">
+      <div class="footer d-flex flex-column align-items-center flex-lg-row justify-content-lg-between">
+        <div class="hyper pb-1 pb-lg-0">
+          <div class="d-flex flex-wrap  align-items-center justify-content-center">
+            <div class="me-4">
+              <a href="#">
+                Privacy policy
+              </a>
+            </div>
+            <div class="me-4">
+              <a href="#">
+                Terms & conditions
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="social pb-1 pb-lg-0">
+          <div class="d-flex  align-items-center justify-content-center">
+            <div class="mx-1">
+              <a href="https://linkedin.com">
+                <span class="icon-linkedin"></span>
+              </a>
+            </div>
+            <div class="mx-1">
+              <a href="https://facebook.com">
+                <span class="icon-facebook"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright text-center">
+          Copyright © 2022. Atwan All rights reserved
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+
+  
+  <!-- JS -->
+  <script src="./lib/js/jquery-3.6.0.min.js"></script>
+  <script src="./lib/bootstrap/js/bootstrap.core.js"></script>
+
+	
+	<!-- Page Scroll to id plugin -->
+	<script src="./lib/plugin/hashchange/jquery.hashchange.min.js"></script>
+	<script src="./lib/plugin/hashchange/jquery.malihu.PageScroll2id.js"></script>
+	
+	<!-- Splide -->
+  <script src="./lib/plugin/splide/js/splide.min.js"></script>
+  
+  <!-- SCRIPT -->
+  
+  <!-- Splide -->
+  <script>
+    //splide-customers
+    new Splide('#splide-customers', {
+      perPage: 6,
+      rewind: true,
+      autoplay: true,
+      //direction: 'rtl',
+      pagination: false,
+      arrows: false,
+      height: '80px',
+      cover: true,
+      pauseOnHover:true,
+
+      breakpoints: {
+        1600: {
+          perPage: 5,
+          gap: '.7rem',
+          height: '80px',
+        },
+        1200: {
+          perPage: 4,
+          gap: '.7rem',
+          height: '80px',
+        },
+        992: {
+          perPage: 3,
+          gap: '.7rem',
+          height: '80px',
+        },
+        768: {
+          perPage: 2,
+          gap: '.7rem',
+          height: '70px',
+        },
+        576: {
+          perPage: 2,
+          gap: '.7rem',
+          height: '60px',
+        },
+      },
+    }).mount();
+
+    //News
+    new Splide('#splide-news', {
+      perPage: 3,
+      rewind: true,
+      autoplay: false,
+      //direction: 'rtl',
+      direction: 'ttb',
+      arrows: false,
+      pauseOnHover:true,
+      wheelSleep: 50000,
+      height: '35rem',
+    }).mount();
+
+    //Meet Our Team
+    new Splide('#splide-ourteam', {
+      perPage: 4,
+      rewind: true,
+      autoplay: true,
+      //direction: 'rtl',
+      pagination: false,
+      arrows: false,
+      cover: true,
+      pauseOnHover:true,
+
+      breakpoints: {
+        1600: {
+          perPage: 3,
+          gap: '.7rem',
+        },
+        1200: {
+          perPage: 2,
+          gap: '.7rem',
+        },
+        992: {
+          perPage: 2,
+          gap: '.7rem',
+        },
+        768: {
+          perPage: 1,
+          gap: '.7rem',
+        },
+        576: {
+          perPage: 1,
+          gap: '.7rem',
+        },
+      },
+    }).mount();
+
+  </script>
+
+<!-- Nav Header Open and close -->
+<script>
+  function myFunction() {
+    var element = document.getElementById("navHeader");
+    element.classList.toggle("is-mobile-nav-open");
+  }
+</script>
+
+<!-- Nav Header Select main item -->
+<script>
+  $(document).ready(function () {
+    $(".c-primary-nav_item").hover(
+      function () {
+        $(this).addClass("dot-visible");
+      },
+      function () {
+        $(this).removeClass("dot-visible");
+      }
+    );
+  });
+</script>
+
+<!-- Nav Header Hide on scroll down and show on scroll up -->
+<script>
+  (function () {
+    var doc = document.documentElement;
+    var w = window;
+    var prevScroll = w.scrollY || doc.scrollTop;
+    var curScroll;
+    var direction = 0;
+    var prevDirection = 0;
+    var header = document.getElementById('navHeader');
+    var checkScroll = function () {
+      /*
+      ** Find the direction of scroll
+      ** 0 - initial, 1 - up, 2 - down
+      */
+      curScroll = w.scrollY || doc.scrollTop;
+      if (curScroll > prevScroll) {
+        //scrolled up
+        direction = 2;
+      }
+      else if (curScroll < prevScroll) {
+        //scrolled down
+        direction = 1;
+      }
+      if (direction !== prevDirection) {
+        toggleHeader(direction, curScroll);
+      }
+      prevScroll = curScroll;
+    };
+    var toggleHeader = function (direction, curScroll) {
+      if (direction === 2 && curScroll > 52) {
+
+        //replace 52 with the height of your header in px
+
+        header.classList.add('hide');
+        prevDirection = direction;
+      }
+      else if (direction === 1) {
+        header.classList.remove('hide');
+        prevDirection = direction;
+      }
+    };
+    window.addEventListener('scroll', checkScroll);
+  })();
+</script>
+
+<!-- PageScroll2id -->
+<script>
+  (function($){
+    $(window).on("load",function(){
+      
+      /* Page Scroll to id fn call */
+      $("#navigation-menu a,a[href='#top'],a[rel='m_PageScroll2id']").mPageScroll2id({
+        highlightSelector:"#navigation-menu a"
+      });
+      
+      /* jquery-hashchange fn */
+      $(window).hashchange(function(){
+        var loc=window.location,
+          to=loc.hash.split("/")[1] || "#top";
+        $.mPageScroll2id("scrollTo",to,{
+          clicked:$("a[href='"+loc+"'],a[href='"+loc.hash+"']")
+        });
+      });
+      
+      /* demo functions */
+      $("a[rel='next']").click(function(e){
+        e.preventDefault();
+        var val="#/"+$(this).parent().parent("section").next().attr("id");
+        window.location.hash=val;
+      });
+      
+    });
+  })(jQuery);
+</script>
+
+  </body>
+</html>
