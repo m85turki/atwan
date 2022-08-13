@@ -3067,7 +3067,7 @@
     @media (max-width:1199px) {
         .c-primary-nav_link {
             font-size: 25px;
-            font-weight: 200;
+            font-weight: 400;
             line-height: 35px;
             margin-bottom: 24px;
             margin-left: auto;
@@ -3610,7 +3610,7 @@
         z-index: -1;
         overflow: hidden;
         transition: all 1s;
-        backdrop-filter: blur(2px);
+        backdrop-filter: blur(4px);
     }
 
     .header-aside_bg:before {
