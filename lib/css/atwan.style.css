@@ -46,7 +46,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   text-align:left;
   color:#D5C18F;
   font-weight:300;
-  font-size:30pt;
+  font-size:25pt;
   overflow:hidden;
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
@@ -54,8 +54,18 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   font-weight: normal;
   position: absolute;
   z-index: 9;
-  max-width: 80%;
+  max-width: 75%;
+  max-width: 600px;
 }
+
+
+@media (min-width: 768px){
+  .we-advice {
+    max-width: 50%;
+    max-width: 600px;
+  }
+}
+
 [dir=rtl] .we-advice {
   text-align:right;
 }
@@ -63,13 +73,13 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 
 @media (min-width:1200px) {
     .we-advice {
-      font-size:40pt;
+      font-size:30pt;
     }
 }
 
 
 .we-advice div {
-  overflow:hidden;
+  overflow:visible;
   white-space:normal;
 }
 .we-advice div span {
@@ -81,18 +91,18 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 }
 
 .we-advice div:last-of-type {
-  width:0px;
+  width:auto;
   animation: reveal 7s infinite;
 }
 
 .we-advice div:last-of-type span {
-  margin-left:-355px;
+  margin-left:0px;
   animation: slidein-ltr 7s infinite;
 }
 
 [dir=rtl] .we-advice div:last-of-type span {
   margin-left:0px;
-  margin-right:-355px;
+  margin-right:0px;
   animation: slidein-rtl 7s infinite;
 }
 
@@ -104,8 +114,8 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 }
 
 @keyframes slidein-ltr {
-    0% { margin-left:-800px; }
-    20% { margin-left:-800px; }
+    0% { margin-left:0px; }
+    20% { margin-left:0px; }
     35% { margin-left:0px; }
     100% { margin-left:0px; }
 }
@@ -118,11 +128,11 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 }
 
 @keyframes reveal {
-    0% {opacity:0;width:0px;}
-    20% {opacity:1;width:0px;}
-    30% {width:355px;}
+    0% {opacity:0;width:auto;}
+    20% {opacity:1;width:auto;}
+    30% {width:auto;}
     80% {opacity:1;}
-    100% {opacity:0;width:355px;}
+    100% {opacity:0;width:auto;}
 }
 
 /* c-site-search */
