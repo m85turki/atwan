@@ -144,10 +144,12 @@
               </form>
             </div>
 
-            <nav onclick="myFunction()" aria-labelledby="primary-nav-label" class="c-primary-nav">
+            <!-- onclick="myFunction()"  -->
+            <nav aria-labelledby="primary-nav-label" class="c-primary-nav">
               <div id="primary-nav-label" hidden="hidden">Primary
               </div>
               <ul class="c-primary-nav_list -left" id="navigation-menu">
+
                 <li class="c-primary-nav_item">
                   <a href="#/section-1" class="c-primary-nav_link -top-level nuxt-link-active">
                     <span class="c-primary-nav_link-inner" style="display:none;">
@@ -1177,6 +1179,8 @@
 	<!-- Splide -->
   <script src="./lib/plugin/splide/js/splide.min.js"></script>
   
+
+
   <!-- SCRIPT -->
   
   <!-- Splide -->
@@ -1226,14 +1230,17 @@
     new Splide('#splide-news', {
       perPage: 3,
       rewind: true,
-      autoplay: false,
+      autoplay: true,
       //direction: 'rtl',
       direction: 'ttb',
       arrows: false,
       pauseOnHover:true,
       wheelSleep: 50000,
       height: '35rem',
+      drag: false,
     }).mount();
+
+    
 
     //Meet Our Team
     new Splide('#splide-ourteam', {
@@ -1280,7 +1287,7 @@
   }
 </script>
 
-<!-- Nav Header Select main item -->
+<!-- Nav Header Select main item 
 <script>
   $(document).ready(function () {
     $(".c-primary-nav_item").hover(
@@ -1293,6 +1300,18 @@
     );
   });
 </script>
+-->
+<script>
+  $(document).ready(function(){
+    $(".c-primary-nav_item").click(
+      function(){
+      $(this).toggleClass("dot-visible");
+    },
+    );
+  });
+  </script>
+
+
 
 <!-- Nav Header Hide on scroll down and show on scroll up -->
 <script>

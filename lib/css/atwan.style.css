@@ -359,11 +359,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   }
 
 
-.title-s{
-    font-size: 13pt;
-    font-weight: 400;
-    color: #CBB88A;
-  }
+
 
 .text-s{
     font-size: 24pt;
@@ -1260,3 +1256,55 @@ html:not([dir=rtl]) .border-end {
   border-color: #dfc998;
   box-shadow: none !important;
 }
+
+
+/* Update style */
+
+.recent-news .list .item-news {
+  width: 100%;
+  padding-left: 40px;
+}
+
+.splide__pagination--ttb {
+  right: auto !important;
+  left: 0.5em !important;
+}
+
+.expertise-sector {
+  z-index: 9999;
+}
+
+.header {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 1200px){
+.header {
+    padding-bottom: 10px;
+}
+}
+
+
+
+/* Update 18-1-2023 */
+
+  .h3.title-s {
+    font-size: 1.625rem !important;
+    font-weight: 400;
+    color: #CBB88A;
+  }
+
+  p a{
+    text-decoration: underline;
+    color: #CBB88A;
+  }
+  
+  p a:hover{
+    text-decoration: none;
+    color: #CBB88A;
+  }
+
+  p.text-justify{
+    text-align: justify;
+  }
+  

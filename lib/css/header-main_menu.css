@@ -3001,6 +3001,8 @@
         }
     }
 
+
+
     @media (min-width:1200px) {
         .c-primary-nav_list.is-submenu {
             position: absolute;
@@ -3081,6 +3083,7 @@
             opacity: 1
         }
     }
+
 
     @media (min-width:1200px) {
         .c-primary-nav_link {
@@ -3735,3 +3738,70 @@
             display: none
         }
     }
+
+
+
+    /* 26/10/2022 */
+
+    @media (max-width:1200px) {
+        /* Update */
+        .c-primary-nav_list.is-submenu {
+            position: absolute;
+            top: 100%;
+            left: auto;
+            width: 100vw;
+            visibility: hidden;
+            padding-bottom: 20px;
+            transition: visibility 0s cubic-bezier(.4, 0, 0, 1);
+            display: block;
+            transition-delay: .6s;
+            height: 0px;
+            transition: all 0.3s;
+        }
+        /* / Update */
+    
+        /* update */
+        .dot-visible .c-primary-nav_link {
+            display: block;
+            width: 100%;
+            white-space: nowrap
+        }
+        .dot-visible .c-primary-nav_link.-submenu-hover~.is-submenu {
+            visibility: visible;
+            transition-delay: 0s;
+            position: relative;
+            height: auto;
+            top: auto;
+            left: auto;
+        }
+        .dot-visible .c-primary-nav_link.-submenu-hover~.is-submenu:before {
+            transform: scaleY(1);
+            transition-delay: 0s
+        }
+        .dot-visible .c-primary-nav_link.-submenu-hover~.is-submenu .c-primary-nav_item {
+            opacity: 1
+        }
+        .dot-visible .c-primary-nav_link.-submenu-hover~.is-submenu {
+            visibility: visible;
+            transition-delay: 0s
+        }
+        .dot-visible .c-primary-nav_link.-submenu-hover~.is-submenu:before {
+            transform: scaleY(1);
+            transition-delay: 0s
+        }
+        .dot-visible .c-primary-nav_link.-submenu-hover~.is-submenu .c-primary-nav_item {
+            opacity: 1
+        }
+        /* / update */
+    }
+    
+
+@media (max-width: 1199px){
+.c-primary-nav_link.-submenu-level-1 {
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+}
